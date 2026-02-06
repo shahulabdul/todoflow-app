@@ -33,7 +33,7 @@ function App() {
               TodoFlow
             </h1>
           </div>
-          <p className="text-gray-600 text-lg">Stay organized and productive</p>
+          <p className="text-red-600 text-lg">Stay organized and productive</p>
         </div>
 
         {/* Add Todo Form */}
@@ -69,12 +69,12 @@ function App() {
             <div className="text-center py-12">
               <div className="p-4 bg-white/60 backdrop-blur-sm rounded-2xl inline-block shadow-sm border border-gray-100">
                 <CheckSquare className="mx-auto text-gray-400 mb-3" size={48} />
-                <p className="text-gray-500 text-lg font-medium">
+                <p className="text-red-500 text-lg font-medium">
                   {filter === 'active' ? 'No active tasks' :
                    filter === 'completed' ? 'No completed tasks' :
                    'No todos yet'}
                 </p>
-                <p className="text-gray-400 text-sm mt-1">
+                <p className="text-red-400 text-sm mt-1">
                   {stats.total === 0 ? 'Add your first todo above!' : 'Try a different filter'}
                 </p>
               </div>
@@ -94,7 +94,7 @@ function App() {
 
         {/* Footer */}
         <div className="mt-12 text-center">
-          <p className="text-gray-400 text-sm">
+          <p className="text-red-400 text-sm">
             Built with React, TypeScript & Tailwind CSS
           </p>
         </div>

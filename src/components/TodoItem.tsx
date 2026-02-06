@@ -69,8 +69,8 @@ export const TodoItem: React.FC<TodoItemProps> = ({ todo, onToggle, onUpdate, on
         ) : (
           <>
             <span
-              className={`flex-1 text-gray-800 transition-all duration-200 ${
-                todo.completed ? 'line-through text-gray-500' : ''
+              className={`flex-1 text-red-800 transition-all duration-200 ${
+                todo.completed ? 'line-through text-red-500' : ''
               }`}
             >
               {todo.text}

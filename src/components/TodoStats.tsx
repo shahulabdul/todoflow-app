@@ -20,9 +20,9 @@ export const TodoStats: React.FC<TodoStatsProps> = ({ stats, onClearCompleted, o
         <div className="flex items-center gap-3">
           <div className="flex items-center gap-2">
             <CheckCircle2 className="text-green-500" size={20} />
-            <span className="text-sm font-medium text-gray-700">Progress</span>
+            <span className="text-sm font-medium text-red-700">Progress</span>
           </div>
-          <span className="text-lg font-bold text-gray-800">{completionPercentage}%</span>
+          <span className="text-lg font-bold text-red-800">{completionPercentage}%</span>
         </div>
         
         {stats.total > 0 && (
@@ -45,7 +45,7 @@ export const TodoStats: React.FC<TodoStatsProps> = ({ stats, onClearCompleted, o
       </div>
 
       <div className="flex items-center justify-between">
-        <div className="text-sm text-gray-600">
+        <div className="text-sm text-red-600">
           {stats.active} of {stats.total} tasks remaining
         </div>
         
