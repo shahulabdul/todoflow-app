@@ -27,13 +27,13 @@ export const TodoFilter: React.FC<TodoFilterProps> = ({ currentFilter, onFilterC
           className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 flex items-center gap-2
                      ${currentFilter === key
                        ? 'bg-blue-500 text-white shadow-md'
-                       : 'text-gray-600 hover:bg-gray-100 hover:text-gray-800'}`}
+                       : 'text-red-600 hover:bg-gray-100 hover:text-red-800'}`}
         >
           {label}
           <span className={`px-2 py-0.5 rounded-full text-xs font-semibold
                           ${currentFilter === key
                             ? 'bg-white/20 text-white'
-                            : 'bg-gray-200 text-gray-600'}`}>
+                            : 'bg-gray-200 text-red-600'}`}>
             {count}
           </span>
         </button>
